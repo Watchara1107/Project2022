@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเครือข่ายสังคมออนไลน์</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ระบบเครือข่ายสังคมออนไลน์</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+            </ul>
+            <span class="navbar-text">
+              <a href="src/login_form.php" class="btn btn-success">Login</a>
+              <a href="src/register_form.php" class="btn btn-primary">Register</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <div id="your-element-selector">
+        ้<h3 class="text-center text-white">ระบบเครือข่ายสังคมออนไลน์</h3>
+      </div>
+    
+    <!-- bootstarp 5 -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/esm/popper.min.js"></script>
+
+    <!-- vantajs -->
+    <script src="node_modules/vanta/vendor/three.r119.min.js"></script>
+    <script src="node_modules/vanta/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+          el: "#your-element-selector",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 500.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00
+        })
+        </script>
+</body>
+</html>
