@@ -29,7 +29,7 @@
     <!-- PLUGINS STYLES-->
     <link href="./assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
     <!-- THEME STYLES-->
-    <link href="assets/css/main.min.css" rel="stylesheet" />
+    <link href="./assets/css/main.min.css" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
 </head>
 
@@ -94,25 +94,28 @@
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
-                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-th-large"></i>
+                        <a href="admin/editprofile.php?update_id=<?php if (isset($_SESSION['user_login'])) {
+                            echo $row['per_no'];} ?>">
+                            <i class="sidebar-item-icon fa fa-edit"></i>
                             <span class="nav-label">แก้ไขข้อมูลส่วนตัว</span>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
-                            <span class="nav-label">เพิ่มรูปภาพประจำตัว</span><i class="fa fa-angle-left arrow"></i></a>
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
+                            <span class="nav-label">เพิ่มรูปภาพประจำตัว</span></a>
+                    </li>
+                    <li>
+                        <a href="admin/editpass.php?update_id=<?php if (isset($_SESSION['user_login'])) {
+                            echo $row['per_no'];} ?>"><i class="sidebar-item-icon fa fa-edit"></i>
+                            <span class="nav-label">เปลี่ยนรหัสผ่าน</span></a>       
                     </li>
                     <li>
                         <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
-                            <span class="nav-label">เปลี่ยนรหัสผ่าน</span><i class="fa fa-angle-left arrow"></i></a>       
+                            <span class="nav-label">โพสต์ข้อความ</span></a>       
                     </li>
                     <li>
                         <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
-                            <span class="nav-label">โพสต์ข้อความ</span><i class="fa fa-angle-left arrow"></i></a>       
-                    </li>
-                    <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
-                            <span class="nav-label">แสดงข้อมูลการโพสต์</span><i class="fa fa-angle-left arrow"></i></a>       
+                            <span class="nav-label">แสดงข้อมูลการโพสต์</span></a>       
                     </li>
                 </ul>
             </div>
@@ -161,7 +164,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8">
-                     
+    
                     </div>
                     
                 </div>
@@ -340,7 +343,7 @@
     <script src="./assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
     <script src="./assets/vendors/jvectormap/jquery-jvectormap-us-aea-en.js" type="text/javascript"></script>
     <!-- CORE SCRIPTS-->
-    <script src="assets/js/app.min.js" type="text/javascript"></script>
+    <script src="./assets/js/app.min.js" type="text/javascript"></script>
     <!-- PAGE LEVEL SCRIPTS-->
     <script src="./assets/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
 </body>
